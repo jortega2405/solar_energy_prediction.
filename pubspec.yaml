@@ -54,6 +54,9 @@ dependencies:
   collection: ^1.17.1
   gap: ^3.0.1
   google_fonts: ^6.1.0
+  location: ^5.0.3
+  google_maps_flutter: ^2.5.3
+  permission_handler: ^11.3.0
 
 dev_dependencies:
   flutter_test:

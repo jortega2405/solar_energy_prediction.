@@ -45,5 +45,11 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	 <key>NSLocationWhenInUseUsageDescription</key>
+    <string>for weather prediction</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>weather prediction</string>
+	<key>GMSApiKey</key>
+    <string>AIzaSyCgR65HX7tydpqzq3hO-AOhQKK__FHWZlo</string>
 </dict>
 </plist>

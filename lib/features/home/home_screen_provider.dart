@@ -20,9 +20,8 @@ class _HomeScreenProviderState extends State<HomeScreenProvider> {
   @override
   void initState() {
     homeScreenBloc = HomeScreenBloc()
-      ..add(
-        const HomeScreenEvent.started(),
-      );
+      ..add(const HomeScreenEvent.checkPermission())
+      ..add(const HomeScreenEvent.getLocation());
     super.initState();
   }
 
