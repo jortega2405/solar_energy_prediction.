@@ -6,6 +6,8 @@ class HomeScreenState with _$HomeScreenState {
     @Default(false) bool isLoading,
     @Default(false) bool locationPermissionGranted,
     LatLng? currentLocation,
-    LatLng? tapPosition,
+    @Default(LatLng(0,0)) LatLng? tapPosition,
+    ForecastResponse? forecastData,
+    @Default(0) int selectedDayIndex,
   }) = _HomeScreenState;
 }

@@ -1,7 +1,11 @@
+import '../../core/core.dart';
 import 'package:flutter/material.dart';
+import '../../common/locator/locator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:solar_energy_prediction/features/home/home_screen.dart';
 import 'package:solar_energy_prediction/features/home/bloc/home_screen_bloc.dart';
+
+
 
 
 
@@ -19,9 +23,12 @@ class _HomeScreenProviderState extends State<HomeScreenProvider> {
 
   @override
   void initState() {
-    homeScreenBloc = HomeScreenBloc()
-      ..add(const HomeScreenEvent.checkPermission())
-      ..add(const HomeScreenEvent.getLocation());
+    homeScreenBloc = HomeScreenBloc(
+      locator<ForecastUseCase>(),
+    )
+    ..add(const HomeScreenEvent.checkPermission())
+    ..add(const HomeScreenEvent.getLocation());
+    
     super.initState();
   }
 

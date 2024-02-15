@@ -5,6 +5,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:solar_energy_prediction/features/home/bloc/home_screen_bloc.dart';
 import 'package:solar_energy_prediction/features/home/components/map_component.dart';
 import 'package:solar_energy_prediction/common/extension/build_context_extension.dart';
+import 'package:solar_energy_prediction/features/home/components/row_forecast_component.dart';
 import 'package:solar_energy_prediction/features/home/components/permission_status_component.dart';
 
 
@@ -40,12 +41,14 @@ class _HomeScreenState extends State<HomeScreen> {
           if (state.locationPermissionGranted) {
               return Column(
                 children: [
+                  const RowForecastComponent(),
                   Expanded(
                     child:
                         MapComponent(
                           tapPosition: state.tapPosition,
                           onTapMap: (LatLng position){
                             context.homeScreenBloc.add(HomeScreenEvent.onTapMap(position));
+                            context.homeScreenBloc.add(HomeScreenEvent.fetchData(position));
                           },  
                         ),
                   ),
@@ -61,3 +64,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+

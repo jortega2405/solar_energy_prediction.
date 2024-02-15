@@ -1,8 +1,5 @@
 import 'package:solar_energy_prediction/common/use_case_request.dart';
 
-
-
-
 /// Defines a handler for a use case request.
 ///
 /// [TRequest] is the type of request being handled
