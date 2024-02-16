@@ -6,7 +6,7 @@ An application for solar energy prediction that displays forecasts and data on a
 
 - I couldn't develop the app with the all features due to the free API is restricted.
 - The app was developed and tested only in iOS due to issues with Android Studio and the emulators.
-- Make sure to test the app on a real device to access your current location accurately. Alternatively, you can use a fake GPS for the emulator.
+- Make sure to test the app on a real device (iOS) to access your current location accurately. Alternatively, you can use a fake GPS for the emulator.
 - If you are going to test the `ApiClientImpl`, you must send a GET request in Postman with the following link: `api.openweathermap.org/data/2.5/forecast?lat=10.801950288569808&lon=-74.91443809121847&appid=f0fb1497553a313d66f68928bb137b02`, so you will get a JSON as response.
 - Once you have this JSON copied to your clipboard, you should look for the `ApiResponseData` and change the JSON for the one that you have pasted and saved it.
 - Then you can run the test. Remember, we are testing a service that changes a lot, so we must generate the data every time that we want to test the service.
@@ -77,9 +77,10 @@ By integrating Clean Architecture principles with the Bloc pattern, the Solar En
 
 1. Clone this repository to your local machine.
 2. Ensure you have Flutter installed on your system.
-3. Run `flutter pub get` to install dependencies.
-4. Run `flutter pub run build_runner build` to generate necessary files with Freezed.
-5. Run the application on an emulator or device using the command `flutter run`.
+3. Naviagte to the develop branch using the command `git checkout develop`.
+4. Run `flutter pub get` to install dependencies.
+5. Run `flutter pub run build_runner build` to generate necessary files with Freezed.
+6. Run the application on an emulator or device using the command `flutter run`.
 
 ## Usage
 
