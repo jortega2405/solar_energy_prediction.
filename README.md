@@ -57,13 +57,13 @@ By integrating Clean Architecture principles with the Bloc pattern, the Solar En
 ## Screenshots
 
 
-![App Launched](https://drive.google.com/file/d/1OIxSI-pSQ6ZwmGrkYx7GFOsjxRHQAX4e/view?usp=sharing)
+![App Launched](https://github.com/jortega2405/solar_energy_prediction./blob/develop/before_center_map.PNG)
 
-![Button tapped to center map using you current location](https://drive.google.com/file/d/1X0aGNXRr8SxofmxkIMIuu0n5xthm2ZqM/view?usp=sharing)
+![Button tapped to center map using you current location](https://github.com/jortega2405/solar_energy_prediction./blob/develop/boton_tapped.PNG)
 
-![Map tapped](https://drive.google.com/file/d/1JRWrDUye9oP6LNPgW8Pmc_uhodAXKTiq/view?usp=sharing)
+![Map tapped](https://github.com/jortega2405/solar_energy_prediction./blob/develop/map_tapped.PNG)
 
-![Map tapped in a different location](https://drive.google.com/file/d/1SqDVhwJ3yFF1AsPZREyrLXN9MfW-U4fe/view?usp=sharing)
+![Map tapped in a different location](https://github.com/jortega2405/solar_energy_prediction./blob/develop/map_tapped_on_different_location.PNG)
 
 ## Technologies Used
 
