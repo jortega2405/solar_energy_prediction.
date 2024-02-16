@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ForecastDayComponent extends StatelessWidget {
   final String date;
@@ -14,8 +15,8 @@ class ForecastDayComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(date),
-        Text(weather),
+        Text(date, style: GoogleFonts.comfortaa(),),
+        Text(weather, style: GoogleFonts.comfortaa()),
       ],
     );
   }

@@ -22,7 +22,7 @@ class _RowForecastComponentState extends State<RowForecastComponent> {
     return BlocBuilder<HomeScreenBloc, HomeScreenState>(
       builder: (context, state) {
         if (state.forecastData == null) {
-          return const Text('No data to show');
+          return Text('No data to show', style: GoogleFonts.comfortaa(),);
         } else {
           final forecastList = state.forecastData!.list!;
           final days = forecastList
