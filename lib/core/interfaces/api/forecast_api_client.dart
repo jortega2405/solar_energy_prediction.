@@ -1,4 +1,5 @@
-import '../../core.dart';
+import 'package:solar_energy_prediction/core/domain/entities/forecast_response.dart';
+
 
 
 abstract class ForecastApiClient{

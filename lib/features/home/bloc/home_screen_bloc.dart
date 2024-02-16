@@ -23,7 +23,7 @@ class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
     on<_HomeScreenEventSelectedPreviousDay>(onHomeScreenEventSelectedPreviousDay);
   }
 
-  Location get location => locator<Location>();
+  final location = locator<Location>();
 
   void onHomeScreenEventCheckPermission(
       _HomeScreenEventCheckPermission event, Emitter emit) async {
@@ -69,7 +69,7 @@ class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
   void onHomeScreenEventSelectedNextDay(
       _HomeScreenEventSelectedNextDay event, Emitter emit) async {
     final currentState = state;
-    final currentSelectedDayIndex = currentState.selectedDayIndex;
+  final currentSelectedDayIndex = currentState.selectedDayIndex;
     final forecastData = currentState.forecastData;
 
     if (forecastData != null) {
